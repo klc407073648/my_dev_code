@@ -1,11 +1,7 @@
 #include"randomArray.h"
 #include"sort.h"
-
-//Linux下兼容操作
-//linux用于使用函数srand和rand函数生成随机字符串
 #include <stdio.h>
 #include <stdlib.h>
-//Linux下兼容操作
 
 using namespace algorithm::sort;
 
