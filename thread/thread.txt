@@ -1,0 +1,14 @@
+Thread函数的用法： #include<thread>
+1.get_id：获取线程ID，返回一个类型为std::thread::id的对象。
+
+2.joinable：检查线程是否可被join。检查thread对象是否标识一个活动(active)的可行性线程。缺省构造的thread对象、已经完成join的thread对象、已经detach的thread对象都不是joinable。
+
+3.join：调用该函数会阻塞当前线程。阻塞调用者(caller)所在的线程直至被join的std::thread对象标识的线程执行结束。
+
+4.detach：将当前线程对象所代表的执行实例与该线程对象分离，使得线程的执行可以单独进行。一旦线程执行完毕，它所分配的资源将会被释放。
+
+5.native_handle：该函数返回与std::thread具体实现相关的线程句柄。native_handle_type是连接thread类和操作系统SDK API之间的桥梁，如在Linux g++(libstdc++)里，
+native_handle_type其实就是pthread里面的pthread_t类型，当thread类的功能不能满足我们的要求的时候(比如改变某个线程的优先级)，
+可以通过thread类实例的native_handle()返回值作为参数来调用相关的pthread函数达到目录。
+
+6.swap：交换两个线程对象所代表的底层句柄。
