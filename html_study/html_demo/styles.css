@@ -227,3 +227,28 @@ header{
   text-align: center;
   
 }
+
+.input_info {
+  text-align: center;
+}
+ .my_input{
+   margin-top: 10px;
+   border: none;
+   text-align: center;
+   font-size: 15px;
+  
+}
+
+
+input::-webkit-input-placeholder{
+  color: lightblue;
+}
+
+
+.my_sumbit {
+  border: none;
+  background: lightblue;
+  color: red;
+  margin-top: 10px;
+  width : 100px;
+}
