@@ -1,0 +1,5 @@
+1579529593 ERROR  : root error
+1579529593 WARN  : root warn
+1579529593 ERROR sub1 : sub1 error
+1579529593 WARN sub1 : sub1 warn
+PASS testDailyRollingFileAppender (exit status: 0)

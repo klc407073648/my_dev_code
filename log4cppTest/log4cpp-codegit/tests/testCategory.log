@@ -1,0 +1,42 @@
+You should see three lines of "root error #1"
+1579529580 ERROR  : root error #1
+1579529580 ERROR  : root error #1
+1579529580 ERROR  : root error #1
+Did you?
+You should see messages that tmpAppender == other appenders
+tmpAppender == appender or appender2 or appender3
+tmpAppender == appender2
+tmpAppender == appender3
+Did you?
+You should not see any lines of  "root error #2"
+Did you?
+You should see messages that tmpAppender != other appenders
+tmpAppender != appender or appender2 or appender3
+tmpAppender != appender2
+tmpAppender != appender3
+Did you?
+ root priority = 300
+ sub1 priority = 800
+ sub2 priority = 800
+1579529580 ERROR  : root error
+1579529580 ERROR sub1 : sub1 error
+1579529580 ERROR sub1.sub2 : sub2 error
+1579529580 FATAL  : This contains 2 variable arguments
+1579529580 ALERT  : This contains 2 variable arguments
+1579529580 CRIT  : This contains 2 variable arguments
+1579529580 ERROR  : This contains 2 variable arguments
+1579529580 ERROR  : This contains really lengthy strings which should be logged well (1145 bytes): Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. Test for variable-arguments lists overflow. 
+ root priority = 300
+ sub1 priority = 600
+ sub2 priority = 800
+priority info
+1579529580 ERROR  : root error
+1579529580 ERROR sub1 : sub1 error
+1579529580 WARN sub1 : sub1 warn
+1579529580 ERROR sub1.sub2 : sub2 error
+1579529580 WARN sub1.sub2 : sub2 warn
+1579529580 ERROR sub1.sub2 : test vform 123
+1579529580 WARN sub1.sub2 : streamed warn
+1579529580 WARN sub1.sub2 : warn2....warn3..value=0
+1579529580 WARN sub1.sub2 : ..warn4
+PASS testCategory (exit status: 0)

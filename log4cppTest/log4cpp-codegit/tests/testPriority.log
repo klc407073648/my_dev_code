@@ -1,0 +1,5 @@
+priority debug(700): DEBUG
+priority debug(700): 700
+priority debug(700): 700
+priority debug(700): caught unknown priority name: '700arghh'
+PASS testPriority (exit status: 0)

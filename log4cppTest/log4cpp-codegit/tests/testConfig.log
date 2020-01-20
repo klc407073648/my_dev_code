@@ -1,0 +1,15 @@
+1579529584 ERROR  : root error
+1579529584 WARN  : root warn
+1579529584 ERROR sub1 : sub1 error
+1579529584 WARN sub1 : sub1 warn
+The message sub2 error at time 2020-01-20 22:13:04,931
+1579529584 ERROR sub1.sub2 : sub2 error
+1579529584 ERROR  : root error
+1579529584 WARN  : root warn
+1579529584 ERROR sub1 : sub1 error
+1579529584 WARN sub1 : sub1 warn
+The message sub2 error at time 2020-01-20 22:13:07,932
+1579529587 ERROR sub1.sub2 : sub2 error
+The message test vform 123 at time 2020-01-20 22:13:07,932
+1579529587 ERROR sub1.sub2 : test vform 123
+PASS testConfig (exit status: 0)

@@ -1,0 +1,12 @@
+1579529941 ALERT mywarn : Alert info
+1579529941 WARN mywarn : This will be a logged warning
+1579529941 CRIT mywarn : Importance depends on context
+1579529941 CRIT mywarn : This will show up << as 1 critical message300
+1579529952 ALERT mywarn : Alert info
+1579529952 WARN mywarn : This will be a logged warning
+1579529952 CRIT mywarn : Importance depends on context
+1579529952 CRIT mywarn : This will show up << as 1 critical message300
+2020-01-20 22:44:32,965: ALERT mywarn : Alert info
+2020-01-20 22:44:33,035: WARN mywarn : This will be a logged warning
+2020-01-20 22:44:33,044: CRIT mywarn : Importance depends on context
+2020-01-20 22:44:33,044: CRIT mywarn : This will show up << as 1 critical message300

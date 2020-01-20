@@ -1,0 +1,21 @@
+ root priority = 300
+ sub1 priority = 800
+ sub2 priority = 800
+1579529580 ERROR  : root error
+1579529580 ERROR sub1 context1: sub1 error
+1579529580 ERROR sub1 context1_2: sub1 error
+1579529580 ERROR sub1.sub2 context2: sub2 error
+ root priority = 300
+ sub1 priority = 800
+ sub2 priority = 800
+priority info
+1579529580 ERROR  : root error
+1579529580 ERROR sub1 context1: sub1 error
+1579529580 WARN sub1 context1: sub1 warn
+1579529580 ERROR sub1.sub2 context2: sub2 error
+1579529580 WARN sub1.sub2 context2: sub2 warn
+1579529580 ERROR sub1.sub2 context2: test vform 123
+1579529580 WARN sub1.sub2 context2: streamed warn
+1579529580 WARN sub1.sub2 context2: warn2....warn3..value=0
+1579529580 WARN sub1.sub2 context2: ..warn4
+PASS testFixedContextCategory (exit status: 0)

@@ -1,0 +1,12 @@
+1579529588 ERROR  : root error
+1579529588 WARN  : root warn
+1579529588 ERROR sub1 : sub1 error
+1579529588 WARN sub1 : sub1 warn
+The message 'sub2 error' at time 2020-01-20 22:13:09,208 thread 140328139310912
+1579529589 ERROR  : root error
+1579529589 WARN  : root warn
+1579529589 ERROR sub1 : sub1 error
+1579529589 WARN sub1 : sub1 warn
+The message 'sub2 error' at time 2020-01-20 22:13:12,209 thread 140328139310912
+The message 'test vform 123' at time 2020-01-20 22:13:12,209 thread 140328139310912
+PASS testPropertyConfig (exit status: 0)

@@ -1,0 +1,31 @@
+% 0 cat1:2020-01-20 22:13:01,453 (1579529581 / 0) [ERROR] ndc1 message % (0) 
+>   message<
+>message   <
+>messa<
+>messa<
+>c3.c4<
+20 Jan 2020 22:13:01.453 message 
+20 Jan 2020 22:13:01.4532020-01-20 22:13:01,453
+message 2020-01-20 22:13:01,453
+0 message 2020-01-20 22:13:01,453
+1 message 2020-01-20 22:13:01,453
+2 message 2020-01-20 22:13:01,453
+3 message 2020-01-20 22:13:01,453
+4 message 2020-01-20 22:13:01,453
+5 message 2020-01-20 22:13:01,453
+6 message 2020-01-20 22:13:01,453
+7 message 2020-01-20 22:13:01,453
+8 message 2020-01-20 22:13:01,453
+9 message 2020-01-20 22:13:01,453
+message 22:13:01.453 20 Jan 2020
+0 message 22:13:01.453 20 Jan 2020
+1 message 22:13:01.453 20 Jan 2020
+2 message 22:13:01.453 20 Jan 2020
+3 message 22:13:01.453 20 Jan 2020
+4 message 22:13:01.453 20 Jan 2020
+5 message 22:13:01.453 20 Jan 2020
+6 message 22:13:01.453 20 Jan 2020
+7 message 22:13:01.453 20 Jan 2020
+8 message 22:13:01.453 20 Jan 2020
+9 message 22:13:01.453 20 Jan 2020
+messagePASS testPattern (exit status: 0)
