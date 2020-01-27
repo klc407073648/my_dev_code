@@ -1,0 +1,29 @@
+2020-01-27,15:34:16: INFO  :LoggerManager created!
+2020-01-27,15:34:16: ERROR  :hello allen,func() called ##/home/cmakeTest1/myprj/source/main.cpp:main:34##
+2020-01-27,17:10:01: INFO klc :LoggerManager created!
+2020-01-27,17:10:01: ERROR klc :hello allen,func() called ##/home/cmakeTest1/myprj/source/main.cpp:main:36##
+2020-01-27,17:55:57: INFO null :LoggerManager created!
+2020-01-27,17:55:57: ERROR null :hello allen,func() called ##/home/cmakeTest1/myprj/source/main.cpp:main:43##
+2020-01-27,19:56:22: INFO null :LoggerManager created!
+2020-01-27,19:56:22: ERROR null :hello allen,func() called ##/home/cmakeTest1/myprj/source/main.cpp:main:47##
+2020-01-27,19:56:52: INFO null :LoggerManager created!
+2020-01-27,19:56:52: ERROR null :Sort ##/home/cmakeTest1/myprj/source/sort.cpp:Sort:21##
+2020-01-27,19:56:52: ERROR null :hello allen,func() called ##/home/cmakeTest1/myprj/source/main.cpp:main:47##
+2020-01-27,20:00:38: INFO  :LoggerManager created!
+2020-01-27,20:00:38: ERROR  :Sort ##/home/cmakeTest1/myprj/source/sort.cpp:Sort:21##
+2020-01-27,20:00:38: ERROR  :hello allen,func() called ##/home/cmakeTest1/myprj/source/main.cpp:main:47##
+2020-01-27,20:29:12: INFO  :LoggerManager created!
+2020-01-27,20:29:12: ERROR  :Sort ##/home/cmakeTest1/myprj/source/sort.cpp:Sort:21##
+2020-01-27,20:29:12: ERROR  :hello allen,func() called ##/home/cmakeTest1/myprj/source/main.cpp:main:47##
+2020-01-27,20:47:20: INFO  :LoggerManager created!
+2020-01-27,20:47:20: ERROR  :Sort Func Test(/sort.:Sort:21)
+2020-01-27,20:47:20: ERROR  :main Func Test(/main.:main:17)
+2020-01-27,20:48:08: INFO  :LoggerManager created!
+2020-01-27,20:48:08: ERROR  :Sort Func Test(sort.:Sort:21)
+2020-01-27,20:48:08: ERROR  :main Func Test(main.:main:17)
+2020-01-27,20:49:01: INFO  :LoggerManager created!
+2020-01-27,20:49:01: ERROR  :Sort Func Test(sort:Sort:21)
+2020-01-27,20:49:01: ERROR  :main Func Test(main:main:17)
+2020-01-27,21:19:42: INFO :LoggerManager created!
+2020-01-27,21:19:42: ERROR :Sort Func Test(sort:Sort:21)
+2020-01-27,21:19:42: ERROR :main Func Test(main:main:18)
