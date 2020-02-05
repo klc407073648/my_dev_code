@@ -202,7 +202,8 @@ Linux环境下，进程地址空间相互独立，每个进程各自有不同的
 
 ③ 共享映射区 (无血缘关系)
 1.文件进程间通信：
-使用文件也可以完成IPC，理论依据是，fork后，父子进程共享文件描述符。也就共享打开的文件
+使用文件也可以完成IPC，理论依据是，fork后，父子进程共享文件描述符。也就共享打开的文件。
+#include <fcntl.h> fd2 = open("test.txt", O_RDWR);//父子进程打开同一个文件
 2.存储映射I/O
 函数：
 void *mmap(void *adrr, size_t length, int prot, int flags, int fd, off_t offset); 
