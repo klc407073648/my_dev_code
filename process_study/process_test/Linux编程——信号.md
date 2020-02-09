@@ -79,3 +79,79 @@ int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact)
 
 ```
 
+- 竞态条件(时序竞态)
+
+```
+pause函数：int pause(void);	返回值：-1 并设置errno为EINTR，仅有出错返回
+调用该函数可以造成进程主动挂起，等待信号唤醒。调用该系统调用的进程将处于阻塞状态(主动放弃cpu) 直到有信号递达将其唤醒。
+
+时序问题分析：
+利用alarm和pause来实现sleep函数功能时，可能alarm函数调用完，就失去CPU。等再次得到CPU时，
+直接去执行SIGALRM的信号处理函数，即pause永远等不到被外来信号中断，程序一直死等待。
+
+解决时序问题：
+可以通过设置屏蔽SIGALRM的方法来控制程序执行逻辑，但无论如何设置，程序都有可能在“解除信号屏蔽”与“挂起等待信号”这个两个操作间隙失去cpu资源。除非将这两步骤合并成一个“原子操作”。sigsuspend函数具备这个功能。在对时序要求严格的场合下都应该使用sigsuspend替换pause。 	
+int sigsuspend(const sigset_t *mask);	挂起等待信号。
+sigsuspend函数调用期间，进程信号屏蔽字由其参数mask指定。
+可将某个信号（如SIGALRM）从临时信号屏蔽字mask中删除，这样在调用sigsuspend时将解除对该信号的屏蔽，
+然后挂起等待，当sigsuspend返回时，进程的信号屏蔽字恢复为原来的值。如果原来对该信号是屏蔽态，
+sigsuspend函数返回后仍然屏蔽该信号。
+
+```
+
+- 全局变量异步I/O
+
+在父子进程中对全局变量同时进行操作时，可能导致程序运行出错。解决方法：利用锁机制。
+
+- 可/不可重入函数
+
+一个函数在被调用执行期间(尚未调用结束)，由于某种时序又被重复调用，称之为“重入”。根据函数实现的方法可分为“可重入函数”和“不可重入函数”两种。不可重入函数大多是在函数中使用了全局变量以及静态变量等，导致程序出错。
+
+注意：信号捕捉函数应设计为可重入函数
+
+- SIGCHLD信号
+
+```
+SIGCHLD的产生条件：
+1.子进程终止时
+2.子进程接收到SIGSTOP信号停止时
+3.子进程处在停止态，接受到SIGCONT后唤醒时
+
+SIGCHLD信号注意问题
+1.子进程继承了父进程的信号屏蔽字和信号处理动作，但子进程没有继承未决信号集spending。
+2.注意注册信号捕捉函数的位置。
+3.应该在fork之前，阻塞SIGCHLD信号。注册完捕捉函数后解除阻塞。
+
+```
+
+- 信号传参
+
+```
+发送信号传参：
+sigqueue函数对应kill函数，但可在向指定进程发送信号的同时携带参数
+int sigqueue(pid_t pid, int sig, const union sigval value);成功：0；失败：-1，设置errno
+
+捕捉函数传参：
+int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact);
+struct sigaction {
+            void     (*sa_handler)(int);
+            void     (*sa_sigaction)(int, siginfo_t *, void *);
+            sigset_t   sa_mask;
+            int       sa_flags;
+            void     (*sa_restorer)(void);
+        };
+当注册信号捕捉函数，希望获取更多信号相关信息，不应使用sa_handler而应该使用sa_sigaction。
+但此时的sa_flags必须指定为SA_SIGINFO。siginfo_t是一个成员十分丰富的结构体类型，可以携带各种与信号相关的数据。
+
+```
+
+- 中断系统调用
+
+```
+系统调用可分为两类：慢速系统调用和其他系统调用。
+1.	慢速系统调用：可能会使进程永远阻塞的一类。如果在阻塞期间收到一个信号，该系统调用就被中断,
+不再继续执行(早期)；也可以设定系统调用是否重启。如，read、write、pause、wait...
+2.	其他系统调用：getpid、getppid、fork...
+
+```
+
