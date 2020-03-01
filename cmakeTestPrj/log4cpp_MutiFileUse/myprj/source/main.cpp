@@ -14,7 +14,7 @@ int main()
 	
 	Sort* mysort= new Sort();
 
-	LoggerManager &mlog = LoggerManager::getInstance();
+	LoggerManager &mlog = LoggerManager::getInstance("Main");
 	logError(mlog,"main Func Test");
 	//LoggerManager* my_LoggerManager=new LoggerManager();
 	return 0;

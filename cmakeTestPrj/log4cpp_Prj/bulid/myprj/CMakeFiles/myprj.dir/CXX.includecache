@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../myprj/include/LoggerManager.h
+log4cpp/Category.hh
+-
+iostream
+-
+string
+-
+vector
+-
+map
+-
+
+../myprj/include/randomArray.h
+math.h
+-
+iostream
+-
+ctime
+-
+vector
+-
+
+../myprj/include/sort.h
+vector
+-
+LoggerManager.h
+../myprj/include/LoggerManager.h
+
+/home/log4cpp_MutiFileUse33/myprj/source/main.cpp
+sort.h
+/home/log4cpp_MutiFileUse33/myprj/source/sort.h
+randomArray.h
+/home/log4cpp_MutiFileUse33/myprj/source/randomArray.h
+LoggerManager.h
+/home/log4cpp_MutiFileUse33/myprj/source/LoggerManager.h
+

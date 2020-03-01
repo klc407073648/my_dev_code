@@ -1,0 +1,8 @@
+2020/01/23,23:23:26 -- ERROR klc: Hello log4cpp in a Error Message!
+2020/01/23,23:23:26 -- WARN klc: Hello log4cpp in a Warning Message!
+2020/01/27,13:18:45 -- ERROR klc: Hello log4cpp in a Error Message!
+2020/01/27,13:18:45 -- WARN klc: Hello log4cpp in a Warning Message!
+2020/01/27,13:24:53 -- ERROR klc: Hello log4cpp in a Error Message!
+2020/01/27,13:24:53 -- WARN klc: Hello log4cpp in a Warning Message!
+2020/01/27,13:26:00 -- ERROR klc: Hello log4cpp in a Error Message!
+2020/01/27,13:26:00 -- WARN klc: Hello log4cpp in a Warning Message!
