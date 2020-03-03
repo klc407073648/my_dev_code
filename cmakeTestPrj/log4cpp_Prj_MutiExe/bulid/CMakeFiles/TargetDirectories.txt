@@ -1,0 +1,8 @@
+/home/log4cpp_Prj/bulid/CMakeFiles/rebuild_cache.dir
+/home/log4cpp_Prj/bulid/CMakeFiles/edit_cache.dir
+/home/log4cpp_Prj/bulid/myprj/sort/CMakeFiles/rebuild_cache.dir
+/home/log4cpp_Prj/bulid/myprj/sort/CMakeFiles/sort.dir
+/home/log4cpp_Prj/bulid/myprj/sort/CMakeFiles/edit_cache.dir
+/home/log4cpp_Prj/bulid/myprj/process/CMakeFiles/rebuild_cache.dir
+/home/log4cpp_Prj/bulid/myprj/process/CMakeFiles/process.dir
+/home/log4cpp_Prj/bulid/myprj/process/CMakeFiles/edit_cache.dir

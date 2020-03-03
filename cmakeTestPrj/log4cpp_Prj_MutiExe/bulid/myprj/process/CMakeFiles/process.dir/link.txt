@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/process.dir/source/fork_fortest.c.o CMakeFiles/process.dir/source/myfun.c.o  -o ../../../deploy/process  -L/home/log4cpp_Prj/3part/log4cpp/lib -Wl,-rpath,/home/log4cpp_Prj/3part/log4cpp/lib -llog4cpp -lpthread 
