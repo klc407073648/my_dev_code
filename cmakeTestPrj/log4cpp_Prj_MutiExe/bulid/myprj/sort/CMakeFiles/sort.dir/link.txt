@@ -1,1 +1,0 @@
-g++    -rdynamic CMakeFiles/sort.dir/source/LoggerManager.cpp.o CMakeFiles/sort.dir/source/main.cpp.o CMakeFiles/sort.dir/source/randomArray.cpp.o CMakeFiles/sort.dir/source/sort.cpp.o  -o ../../../deploy/sort  -L/home/log4cpp_Prj/3part/log4cpp/lib -Wl,-rpath,/home/log4cpp_Prj/3part/log4cpp/lib -llog4cpp -lpthread 

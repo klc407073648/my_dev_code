@@ -1,1 +1,0 @@
-g++       CMakeFiles/myprj.dir/source/sort.cpp.o CMakeFiles/myprj.dir/source/randomArray.cpp.o CMakeFiles/myprj.dir/source/main.cpp.o  -o ../../deploy/myprj  -L/home/klc/my_dev_code/cmakeTest/3part/lib -rdynamic 

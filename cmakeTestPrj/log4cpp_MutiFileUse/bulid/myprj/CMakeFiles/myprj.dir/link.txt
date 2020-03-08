@@ -1,1 +1,0 @@
-g++    -rdynamic CMakeFiles/myprj.dir/source/LoggerManager.cpp.o CMakeFiles/myprj.dir/source/main.cpp.o CMakeFiles/myprj.dir/source/randomArray.cpp.o CMakeFiles/myprj.dir/source/sort.cpp.o  -o ../../deploy/myprj  -L/home/cmakeTest1/3part/log4cpp/lib -Wl,-rpath,/home/cmakeTest1/3part/log4cpp/lib -llog4cpp -llog4cpp -lpthread 

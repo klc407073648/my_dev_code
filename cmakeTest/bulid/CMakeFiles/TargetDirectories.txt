@@ -1,1 +1,0 @@
-/home/klc/my_dev_code/cmakeTest/bulid/myprj/CMakeFiles/myprj.dir

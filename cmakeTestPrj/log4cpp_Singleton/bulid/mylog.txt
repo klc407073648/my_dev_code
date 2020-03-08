@@ -1,2 +1,0 @@
-2020-01-27 14:40:13,761: INFO  :LoggerManager created!
-2020-01-27 14:40:13,762: ERROR  :hello allen,func() called ##/home/cmakeTest1/myprj/source/main.cpp:main:34##
