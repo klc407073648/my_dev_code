@@ -1,0 +1,3 @@
+2020-04-25 17:37:45,699: INFO myinfo : test info log
+2020-04-25 17:37:45,699: ERROR myinfo : test error log
+2020-04-25 17:37:45,699: CRIT myinfo : Set Priority::CRIT log
