@@ -1,0 +1,3 @@
+可执行文件生成：
+gcc -lpthread -o HttpServer HttpServer.cpp main.cpp
+gcc -lpthread -o simpleclient simpleclient.c
