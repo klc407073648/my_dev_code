@@ -1,0 +1,2 @@
+需要设置include目录和链接路径，即将上述文件全放在一个文件夹内即可
+g++ -o main  main.cpp  -I /home/test/ -L /home/test/ -ltinyxml
