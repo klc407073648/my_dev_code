@@ -4,6 +4,7 @@
 1.下载  jsoncpp-src-0.5.0.tar.gz 文件
 2.切换到 jsoncpp 目录 ，执行
   python /usr/bin/scons platform=linux-gcc
+  (需要提前安装scons,解压zip包，cd ./scons-3.1.1/ python setup.py install)
 3. 在/home/jsoncpp-src-0.5.0/libs/linux-gcc-9.1.0/ 路径下找到
    libjson_linux-gcc-9.1.0_libmt.so
    libjson_linux-gcc-9.1.0_libmt.a

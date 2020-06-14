@@ -8,7 +8,7 @@ git clone https://git.code.sf.net/p/log4cpp/codegit log4cpp-codegit
 
 ```
 cd log4cpp-codegit/  
-./autogen.sh  
+./autogen.sh   #需要yum install libtool
 ./configure  
 make
 make check
